@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/js/main.js">
+    <title>Film Descripton</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="main">
+            <div class="image">
+                <img src="/assets/image/film description.jpg" alt="">
+            </div>
+            <div class="main-text">
+                <h1>kill bill: vol.1</h1>
+               
+                <div class="info">
+                     <span>2003</span>
+                    <span>111 min</span>
+                    <span>Action</span>
+                </div>
+                
+                <div class="stars">
+                    <input type="radio" name="rate" id="rate-1">
+                    <label for="rate-1" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-2">
+                    <label for="rate-2" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-3">
+                    <label for="rate-3" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-4">
+                    <label for="rate-4" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-5">
+                    <label for="rate-5" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-6">
+                    <label for="rate-6" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-7">
+                    <label for="rate-7" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-8">
+                    <label for="rate-8" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-9">
+                    <label for="rate-9" class="fas fa-star"></label>
+                    <input type="radio" name="rate" id="rate-10">
+                    <label for="rate-10" class="fas fa-star"></label>
+                </div>
+
+                <p>The lead character, called 'The Bride,' was a member of the Deadly Viper Assassination Squad, led by
+                    her lover 'Bill.' Upon realizing she was pregnant with Bill's child, 'The Bride' decided to escape
+                    her life as a killer. She fled to Texas, met a young man,who,on the day of their wedding rehearsal
+                    was gunned down by <span id="dots">....</span><span id="more"> da hecne xosbext oldular.</span>
+                </p>
+                <a class="read-more" onclick="myFunction()" id="myBtn">Read more</a>
+
+                <script>
+                    function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more";
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less";
+                            moreText.style.display = "inline";
+                        }
+                    }
+                </script>
+
+                <div class="trailer">
+                    <button class="watch-trailer">
+                        <a class="watch" href="#">WATCH TRAILER</a>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+.card{
+    display: flex;
+    justify-content:center;
+    margin-top: 70px;
+}
+
+
+.main{
+    display: flex;
+    background: black;
+    height: 370px;
+    width: 720px;
+    border-radius: 9px;
+    box-shadow: -7px 8px 5px rgb(167 167 160);
+}
+
+img{
+    object-fit: cover;
+    height: 100%;
+    width: 270px;
+    border-bottom-left-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+.main-text{
+    color: white;
+    margin-left: 40px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+span{
+    margin-right: 30px;
+}
+
+.stars{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-right: 75px;
+    transform: rotateY(180deg);
+}
+
+.stars input{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.stars label{
+    font-size: 20px;
+    float: right;
+    transition: all 0.3s ease;
+    margin-right: 5px;
+}
+
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+    color: yellow;
+}
+
+input:checked ~ label{
+    color: yellow;
+}
+input#rate-1:checked ~ label{
+    color:#fe7;
+    text-shadow: 0 0 15px rgb(251, 255, 0);
+}
+
+p{
+    font-family: "Gill Sans", sans-serif;
+    font-weight:bold;
+    max-width: 350px;
+    margin-top: 10px;
+}
+
+.read-more{
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+}
+
+.read-more:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+.trailer{
+    margin-top: 20px;
+    border: 1px solid yellow;
+    width: 140px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+.watch-trailer{
+    background: none;
+}
+
+a .watch{
+    color: yellow;
+    width: 70px;
+}
+
+a {
+    color: yellow;
+    text-decoration: none;
+}
+
+a[href='#'] {
+    color: yellow;
+    text-decoration: none;
+}
+
+.watch:hover{
+    text-decoration: none;
+    color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#more{
+    display: none;
+}
